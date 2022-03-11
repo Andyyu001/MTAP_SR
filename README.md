@@ -8,7 +8,7 @@ This is an official implementation of _From Low to High: Cascade network for Res
 * Python packages: pip install numpy opencv-python
 
 ## Dataset Preparation
-The train and test dataset are obtained by using the above-constructed method from CelebAMask HQ dataset.        
+The train and test dataset are obtained by using the above-constructed method from **CelebAMask HQ dataset**(MaskGAN: Towards Diverse and Interactive Facial Image Manipulation).        
 To construct the low-quality face dataset, we process the HR face images by using the following method. 
 * all face images are normalized as the size $256 \times 256$.
 * these normalized images are blurred by randomly using blurry kernel from DeblurGAN.
