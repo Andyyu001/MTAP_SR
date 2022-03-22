@@ -21,21 +21,21 @@ To construct the low-quality face dataset, we process the HR face images by usin
 * the LR face images can be produced by downsampling from the blurry face images. It is noted that the size of the LR face image is set as $<16 \times 16>.
 
 ### how to create the datafile
-*1. opening code _Get_data.py_ 
-*2. changing the path of your dataset, and labelfile
-*3. getting the labelfile, e.g. _data/label10000.csv_
+* 1. opening code _Get_data.py_ 
+* 2. changing the path of your dataset, and labelfile
+* 3. getting the labelfile, e.g. _data/label10000.csv_
 
 ## Train
-*1. opening code _train_16times_GAN.py_
-*2. changing the Dataset loader by _data/label10000.csv_
-*3. changing the save_path on your path, e.g. _Model_study/P16times/GAN_8/netG_B8_D1W_vggImgGAN_284.pth_
-*4. python --cuda --batchSize 10  
+* 1. opening code _train_16times_GAN.py_
+* 2. changing the Dataset loader by _data/label10000.csv_
+* 3. changing the save_path on your path, e.g. _Model_study/P16times/GAN_8/netG_B8_D1W_vggImgGAN_284.pth_
+* 4. python --cuda --batchSize 10  
 
 ## Test on Synthetic Images
 evaluation methods including GMSE,LPIPS, PSNR, SSIM, OIM
-*1. opening code _test_16times.py_
-*2. changing the save_path on your path
-*3. python --cuda --generator Model_study/P16times/GAN_8/netG_B8_D1W_vggImgGAN_284.pth
+* 1. opening code _test_16times.py_
+* 2. changing the save_path on your path
+* 3. python --cuda --generator Model_study/P16times/GAN_8/netG_B8_D1W_vggImgGAN_284.pth
 
 ## Acknowledgment
 The auothor would like to thank the opening-source codes from DeblurGAN, SFT_SR, and so on.
